@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <title>Kaleidoszkóp</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="kaleidoscope, kaleidoszkóp, html5 canvas">
+  <link href="std.css" rel="stylesheet" type="text/css">
+  <script language="JavaScript" type="text/javascript" src="kaleidoscope.js"></script>
+</head>
+<body id="kaleidoscope">
+  <div id="kalei_holder">
+    <canvas id="kalei_canvas" width="600" height="600">Ez a böngésző nem képes a megjelenítésre. Cserélje korszerűbbre!</canvas>
+  </div>
+  <div id="image_holder">
+    <div id="input_holder">
+      <img src="img/hu.jpg" onclick="tohun();">
+      <img src="img/en.jpg" onclick="toen();"><br>
+      <span id="tx1">Helyi kép betöltése</span><br>
+      <input type="file" id="ldimg"><br>
+      <span id="tx2">A háromszög-keret egérrel húzható</span><br>
+      <label id="tx3" for="rot1">Keret forgatása</label>
+      <input type="button" value="+" name="rot1" onmousedown="roright();" onmouseup="rostop();">
+      <input type="button" value="-" name="rot2" onmousedown="roleft();" onmouseup="rostop();">
+    </div>
+    <canvas id="canv"></canvas>
+  </div>
+  <canvas id="bcan" width="100" height="87"></canvas>
+</body>
+</html>

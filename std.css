@@ -1,0 +1,164 @@
+@charset "utf-8";
+body.ind {
+  background-color: #3f0008;
+}
+body.prg {
+  background-color: #710000;
+  background-image: url('img/fract003.gif');
+  color: #ffc39b;
+}
+body.stock {
+  background-image: url('img/fract002.gif');
+}
+body.hobby {
+  background-image: url('img/0095.gif');
+}
+body.nyelv {
+  background-color: peachpuff;
+}
+canvas {
+  border: 1px solid black; }
+.ground {
+  width: 600px;
+  height: 600px;
+  background-image: url('img/thinker_up2.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+}
+.belo {
+  width: 240px;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  left: 700px;
+  background-image: url('img/belohin.png');
+  background-repeat: no-repeat;
+}
+.tit {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  top: 100px;
+  left: 660px;
+  background-image: url('img/muhely.png');
+  background-repeat: no-repeat;
+}
+.menu a img {
+  border: 0px;
+  -moz-opacity: 0.32;
+  opacity: 0.32;
+}
+.thumb {
+  cursor: pointer;
+}
+/*.menu a:focus img {
+border: 0px;
+-moz-opacity: 0.32;
+opacity: 0.32;
+}*/
+.menu a:hover img {
+  -moz-opacity: 1.0;
+  opacity: 1.0;
+  border: 0px;
+}
+.menu a span {
+  display: none;
+  position: absolute;
+  top: 27px;
+  left: 324px;
+}
+.menu a:hover span {
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 324px;
+}
+li {
+  list-style-type: none;
+}
+.bgimg {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  border: 0px;
+  z-index: 1000;
+}
+#tipdiv1_content {
+  width: 240px;
+}
+#wicon {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+}
+#contact {
+  position: absolute;
+  top: 380px;
+  left: 35px;
+}
+#norobot {
+unicode-bidi: bidi-override;
+direction: rtl;
+}
+.pointed {
+  cursor: pointer;
+}
+#im1 {
+  position: absolute;
+  top: 160px;
+  left: 360px;
+  border: 0px;
+}
+#im2 {
+  position: absolute;
+  top: 160px;
+  left: 360px;
+  border: 0px;
+}
+.foot {
+  position: absolute;
+  top: 570px;
+  width: 100%;
+  text-align: center;
+  color: gold;
+  font-size: 66%;
+}
+.prgitem {
+  display: inline-block;
+  padding: 10px;
+/*  width: 20%;*/
+  text-align: center;
+  color: lavender;
+}
+canvas#bcan {
+  display: none;
+}
+div#kalei_holder, div#image_holder {
+  display: inline-block;
+}
+div#input_holder{
+  background: peachpuff;
+  padding: 5%;
+  text-align: center;
+}
+body#kaleidoscope {
+  background-image: url('img/tuxtile.jpg');
+}
+body#cspace {
+  background-image: url('img/random.jpg');
+}
+canvas#canv {
+  background: white;
+}
+div#container {
+  background: gray;
+  width: 200px;
+  height: 120px;
+  margin: 0 auto;
+}
+#drops {
+  display: none;
+}

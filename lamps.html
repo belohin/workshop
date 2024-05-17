@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="javascript, program, játék, bűvös lámpácskák">
+  <title>
+    Bűvös lámpácskák
+  </title>
+  <link href="lamps.css" rel="stylesheet" type="text/css">
+  <script src="jquery-1.11.0.min.js"></script>
+  <script src="jquery-ui-1.10.4.custom.min.js"></script>
+  <script type="text/javascript" language="JavaScript" src="lamps.js"></script>
+</head>
+<body>
+  <div class="playinfo" id="lampak_info">
+    <h2>
+      Bűvös lámpácskák
+    </h2>
+    <p>
+      A játék célja az összes lámpácska kigyújtása. A kattintott lámpácska és oldalsó szomszédai kigyulladnak. Azonban, ha egy olyan szomszéd érintett, amelyik már ég, az elalszik.<br>A végtelenített játéktér azt jelenti, hogy a szélső lámpácskáknak is négy szomszédjuk van - a túlsó szélen levő a negyedik.
+    </p>
+    <form name="lampset">
+      <label for="rownum">Sorok száma:</label>
+      <select name="rownum" id="rownum">
+      </select><br>
+      <label for="colnum">Oszlopok száma:</label>
+      <select name="colnum" id="colnum">
+      </select><br>
+      <label for="type">Játéktér típusa:</label>
+      <select name="type" id="type">
+        <option value="1">Egyszerű</option>
+        <option value="2">Végtelenített</option>
+      </select><br>
+      <input type="button" name="startb" value="Kezdés" onClick="setboard();">
+    </form>
+  </div>
+  <div id="container">
+  <table id="gameplace">
+  <tbody id="board">
+  </tbody>
+  </table>
+  <div id="monitor">
+    <label for="counter">Ég:</label>
+    <input type="text" id="counter" value="0" class="borderless">
+    <img src="img/light.gif"><br>
+    <label for="std">Lépés:</label>
+    <input type="text" id="std" value="0" class="borderless"><br>
+    <input type="button" id="backb" value="Vissza" onClick="backstep();" title="Visszalépés a játékban">
+    <input type="button" id="reb" value="Újra lépés" onClick="restep();" title="Előrelépés újra végrehajtása"><br>
+    <input type="button" value="Újrakezdés" onClick="newgame();" title="Új játék ugyanezen a játéktéren"><br>
+    <input type="button" value="Új játéktér" onClick="window.location.reload()" title="Új játék új játéktéren">
+  </div>
+  </div>
+</body>
+</html>
